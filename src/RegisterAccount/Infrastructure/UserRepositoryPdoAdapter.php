@@ -26,10 +26,6 @@ class UserRepositoryPdoAdapter implements UserRepositoryInterface
         $stmt->bindValue(':password', $user->getPassword(), PDO::PARAM_STR);
         $stmt->bindValue(':sex', $user->getSex(), PDO::PARAM_STR);
 
-        if ($stmt->execute()) {
-            echo 'asds';
-        } else {
-            echo 'dupa';
-        }
+        $stmt->execute();
     }
 }

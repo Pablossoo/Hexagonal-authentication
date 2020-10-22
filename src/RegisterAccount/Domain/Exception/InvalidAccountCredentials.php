@@ -5,7 +5,7 @@ namespace RegisterAccount\Domain\Exception;
 
 class InvalidAccountCredentials extends \Exception
 {
-    public function withIt(string $username)
+    public static function withIt(string $username)
     {
         return new self(sprintf('invalid credentials, userame: %s', $username));
     }
