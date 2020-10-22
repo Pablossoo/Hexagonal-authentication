@@ -5,7 +5,7 @@ name VARCHAR(50) NOT NULL,
 surname VARCHAR(50) NOT NULL,
 login VARCHAR(50),
 password VARCHAR(80),
-sex BOOL
+sex VARCHAR(1)
 )
 
 ALTER TABLE `user_account` ADD UNIQUE(`login`);
