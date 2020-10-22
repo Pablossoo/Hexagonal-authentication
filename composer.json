@@ -6,7 +6,9 @@
             "email": "heros68@wp.pl"
         }
     ],
-    "require": {},
+    "require": {
+      "ext-pdo": "*"
+    },
     "autoload": {
         "psr-4": {
             "":"src/"

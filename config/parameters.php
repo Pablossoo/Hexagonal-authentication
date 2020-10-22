@@ -1,10 +1,11 @@
 <?php
+declare(strict_types=1);
 
-return [
+$params = [
     'db' => [
         'user' => 'root',
         'password' => '',
-        'db_name' => 'School',
-        'host' => 'localhost'
-    ]
+        'db_name' => 'school',
+        'host' => 'localhost',
+    ],
 ];
