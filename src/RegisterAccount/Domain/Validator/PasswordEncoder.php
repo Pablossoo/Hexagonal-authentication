@@ -9,4 +9,9 @@ class PasswordEncoder
     {
         return password_hash($password, PASSWORD_BCRYPT, $options);
     }
+
+    public function decodePassword(string $password, string $passwordToCheck): bool
+    {
+        return password_verify($password, $passwordToCheck);
+    }
 }

@@ -5,7 +5,7 @@ namespace RegisterAccount\Domain\Validator;
 
 final class LoginValidator implements ValidatorInterface
 {
-    private const MIN_LENGTH_LOGIN = 5;
+    private const MIN_LENGTH_LOGIN = 6;
 
     private $message = 'Login must have least 5 charakters';
 

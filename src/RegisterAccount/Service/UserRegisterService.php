@@ -26,11 +26,7 @@ final class UserRegisterService
     public function registerAccount(string $name, string $surname, string $login, string $password, string $sex)
     {
         if ($this->validatorContext->isValid() === false) {
-            foreach ($this->validatorContext->getErrorMessage() as $error) {
-                echo $error . PHP_EOL;
-            }
-
-            throw new \Exception('validation failed');
+            throw new \Exception(implode(',', $this->validatorContext->getErrorMessage()));
         }
         $encodePassword = $this->passwordEncoder->encodePassword($password);
 
